@@ -46,11 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Delete Member.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete Member.Designer.cs">
+      <DependentUpon>Delete Member.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New Equipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New Equipment.Designer.cs">
+      <DependentUpon>New Equipment.cs</DependentUpon>
     </Compile>
     <Compile Include="New Member.cs">
       <SubType>Form</SubType>
@@ -58,13 +76,37 @@
     <Compile Include="New Member.Designer.cs">
       <DependentUpon>New Member.cs</DependentUpon>
     </Compile>
+    <Compile Include="New staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New staff.Designer.cs">
+      <DependentUpon>New staff.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Delete Member.resx">
+      <DependentUpon>Delete Member.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New Equipment.resx">
+      <DependentUpon>New Equipment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="New Member.resx">
       <DependentUpon>New Member.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New staff.resx">
+      <DependentUpon>New staff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -75,6 +117,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -39,19 +39,19 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.textBox1NMname = new System.Windows.Forms.TextBox();
+            this.textBoxNMLname = new System.Windows.Forms.TextBox();
+            this.textBoxNMphone = new System.Windows.Forms.TextBox();
+            this.textBoxNMemail = new System.Windows.Forms.TextBox();
+            this.textBoxNMadd = new System.Windows.Forms.TextBox();
+            this.radioButtonNMmale = new System.Windows.Forms.RadioButton();
+            this.radioButtonNMfemale = new System.Windows.Forms.RadioButton();
+            this.dateTimePickerNMdob = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerNMjoin = new System.Windows.Forms.DateTimePicker();
+            this.btnNMsave = new System.Windows.Forms.Button();
+            this.btnNMRest = new System.Windows.Forms.Button();
+            this.comboBoxNMmem = new System.Windows.Forms.ComboBox();
+            this.comboBoxNMgym = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -59,262 +59,305 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(55, 170);
+            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.Location = new System.Drawing.Point(31, 166);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 20);
-            this.label1.TabIndex = 0;
+            this.label1.Size = new System.Drawing.Size(153, 30);
+            this.label1.TabIndex = 1;
             this.label1.Text = "First Name";
-            this.label1.UseWaitCursor = true;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Navy;
-            this.label2.Location = new System.Drawing.Point(55, 243);
+            this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.Location = new System.Drawing.Point(31, 233);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 20);
+            this.label2.Size = new System.Drawing.Size(153, 29);
             this.label2.TabIndex = 1;
             this.label2.Text = "Last Name";
-            this.label2.UseWaitCursor = true;
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Navy;
-            this.label3.Location = new System.Drawing.Point(55, 316);
+            this.label3.Image = ((System.Drawing.Image)(resources.GetObject("label3.Image")));
+            this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label3.Location = new System.Drawing.Point(31, 309);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 20);
+            this.label3.Size = new System.Drawing.Size(120, 29);
             this.label3.TabIndex = 2;
             this.label3.Text = "Gender";
-            this.label3.UseWaitCursor = true;
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Navy;
-            this.label4.Location = new System.Drawing.Point(55, 391);
+            this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
+            this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label4.Location = new System.Drawing.Point(31, 391);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(118, 20);
+            this.label4.Size = new System.Drawing.Size(169, 29);
             this.label4.TabIndex = 3;
             this.label4.Text = "Date of Birth";
-            this.label4.UseWaitCursor = true;
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Navy;
-            this.label5.Location = new System.Drawing.Point(56, 475);
+            this.label5.Image = ((System.Drawing.Image)(resources.GetObject("label5.Image")));
+            this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label5.Location = new System.Drawing.Point(31, 459);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 20);
+            this.label5.Size = new System.Drawing.Size(120, 32);
             this.label5.TabIndex = 4;
             this.label5.Text = "Phone";
-            this.label5.UseWaitCursor = true;
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Navy;
-            this.label6.Location = new System.Drawing.Point(442, 167);
+            this.label6.Image = ((System.Drawing.Image)(resources.GetObject("label6.Image")));
+            this.label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label6.Location = new System.Drawing.Point(431, 167);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 20);
+            this.label6.Size = new System.Drawing.Size(109, 29);
             this.label6.TabIndex = 5;
             this.label6.Text = "Email";
-            this.label6.UseWaitCursor = true;
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Navy;
-            this.label7.Location = new System.Drawing.Point(442, 237);
+            this.label7.Image = ((System.Drawing.Image)(resources.GetObject("label7.Image")));
+            this.label7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label7.Location = new System.Drawing.Point(431, 237);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 20);
+            this.label7.Size = new System.Drawing.Size(136, 29);
             this.label7.TabIndex = 6;
             this.label7.Text = "Join Date";
-            this.label7.UseWaitCursor = true;
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Navy;
-            this.label8.Location = new System.Drawing.Point(442, 314);
+            this.label8.Image = ((System.Drawing.Image)(resources.GetObject("label8.Image")));
+            this.label8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label8.Location = new System.Drawing.Point(431, 314);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(94, 20);
+            this.label8.Size = new System.Drawing.Size(147, 29);
             this.label8.TabIndex = 7;
             this.label8.Text = "Gym Time";
-            this.label8.UseWaitCursor = true;
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Navy;
-            this.label9.Location = new System.Drawing.Point(442, 385);
+            this.label9.Image = ((System.Drawing.Image)(resources.GetObject("label9.Image")));
+            this.label9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label9.Location = new System.Drawing.Point(431, 382);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(78, 20);
+            this.label9.Size = new System.Drawing.Size(136, 29);
             this.label9.TabIndex = 8;
             this.label9.Text = "Address";
-            this.label9.UseWaitCursor = true;
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Navy;
-            this.label10.Location = new System.Drawing.Point(256, 516);
+            this.label10.Image = ((System.Drawing.Image)(resources.GetObject("label10.Image")));
+            this.label10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label10.Location = new System.Drawing.Point(218, 507);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(158, 20);
+            this.label10.Size = new System.Drawing.Size(212, 33);
             this.label10.TabIndex = 9;
             this.label10.Text = "Membership Time";
-            this.label10.UseWaitCursor = true;
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox1
+            // textBox1NMname
             // 
-            this.textBox1.Location = new System.Drawing.Point(175, 164);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 10;
-            this.textBox1.UseWaitCursor = true;
+            this.textBox1NMname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.textBox1NMname.Location = new System.Drawing.Point(206, 170);
+            this.textBox1NMname.Name = "textBox1NMname";
+            this.textBox1NMname.Size = new System.Drawing.Size(100, 22);
+            this.textBox1NMname.TabIndex = 10;
             // 
-            // textBox2
+            // textBoxNMLname
             // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(175, 237);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 11;
-            this.textBox2.UseWaitCursor = true;
+            this.textBoxNMLname.BackColor = System.Drawing.Color.White;
+            this.textBoxNMLname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.textBoxNMLname.Location = new System.Drawing.Point(206, 237);
+            this.textBoxNMLname.Name = "textBoxNMLname";
+            this.textBoxNMLname.Size = new System.Drawing.Size(100, 22);
+            this.textBoxNMLname.TabIndex = 11;
             // 
-            // textBox5
+            // textBoxNMphone
             // 
-            this.textBox5.Location = new System.Drawing.Point(175, 457);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 22);
-            this.textBox5.TabIndex = 14;
-            this.textBox5.UseWaitCursor = true;
+            this.textBoxNMphone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.textBoxNMphone.Location = new System.Drawing.Point(206, 459);
+            this.textBoxNMphone.Name = "textBoxNMphone";
+            this.textBoxNMphone.Size = new System.Drawing.Size(100, 22);
+            this.textBoxNMphone.TabIndex = 14;
             // 
-            // textBox6
+            // textBoxNMemail
             // 
-            this.textBox6.BackColor = System.Drawing.Color.White;
-            this.textBox6.Location = new System.Drawing.Point(576, 167);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 22);
-            this.textBox6.TabIndex = 15;
-            this.textBox6.UseWaitCursor = true;
+            this.textBoxNMemail.BackColor = System.Drawing.Color.White;
+            this.textBoxNMemail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.textBoxNMemail.Location = new System.Drawing.Point(576, 167);
+            this.textBoxNMemail.Name = "textBoxNMemail";
+            this.textBoxNMemail.Size = new System.Drawing.Size(100, 22);
+            this.textBoxNMemail.TabIndex = 15;
             // 
-            // textBox9
+            // textBoxNMadd
             // 
-            this.textBox9.BackColor = System.Drawing.Color.White;
-            this.textBox9.Location = new System.Drawing.Point(576, 382);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(170, 109);
-            this.textBox9.TabIndex = 18;
-            this.textBox9.UseWaitCursor = true;
+            this.textBoxNMadd.BackColor = System.Drawing.Color.White;
+            this.textBoxNMadd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.textBoxNMadd.Location = new System.Drawing.Point(576, 382);
+            this.textBoxNMadd.Multiline = true;
+            this.textBoxNMadd.Name = "textBoxNMadd";
+            this.textBoxNMadd.Size = new System.Drawing.Size(170, 109);
+            this.textBoxNMadd.TabIndex = 18;
             // 
-            // radioButton1
+            // radioButtonNMmale
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.ForeColor = System.Drawing.Color.Navy;
-            this.radioButton1.Location = new System.Drawing.Point(172, 314);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(62, 20);
-            this.radioButton1.TabIndex = 19;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Male";
-            this.radioButton1.UseVisualStyleBackColor = false;
-            this.radioButton1.UseWaitCursor = true;
+            this.radioButtonNMmale.AutoSize = true;
+            this.radioButtonNMmale.BackColor = System.Drawing.Color.Transparent;
+            this.radioButtonNMmale.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonNMmale.ForeColor = System.Drawing.Color.Navy;
+            this.radioButtonNMmale.Location = new System.Drawing.Point(206, 314);
+            this.radioButtonNMmale.Name = "radioButtonNMmale";
+            this.radioButtonNMmale.Size = new System.Drawing.Size(62, 20);
+            this.radioButtonNMmale.TabIndex = 19;
+            this.radioButtonNMmale.TabStop = true;
+            this.radioButtonNMmale.Text = "Male";
+            this.radioButtonNMmale.UseVisualStyleBackColor = false;
             // 
-            // radioButton2
+            // radioButtonNMfemale
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.ForeColor = System.Drawing.Color.Navy;
-            this.radioButton2.Location = new System.Drawing.Point(294, 314);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(80, 20);
-            this.radioButton2.TabIndex = 20;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Female";
-            this.radioButton2.UseVisualStyleBackColor = false;
-            this.radioButton2.UseWaitCursor = true;
+            this.radioButtonNMfemale.AutoSize = true;
+            this.radioButtonNMfemale.BackColor = System.Drawing.Color.Transparent;
+            this.radioButtonNMfemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonNMfemale.ForeColor = System.Drawing.Color.Navy;
+            this.radioButtonNMfemale.Location = new System.Drawing.Point(294, 314);
+            this.radioButtonNMfemale.Name = "radioButtonNMfemale";
+            this.radioButtonNMfemale.Size = new System.Drawing.Size(80, 20);
+            this.radioButtonNMfemale.TabIndex = 20;
+            this.radioButtonNMfemale.TabStop = true;
+            this.radioButtonNMfemale.Text = "Female";
+            this.radioButtonNMfemale.UseVisualStyleBackColor = false;
             // 
-            // dateTimePicker1
+            // dateTimePickerNMdob
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(179, 391);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(199, 22);
-            this.dateTimePicker1.TabIndex = 21;
-            this.dateTimePicker1.UseWaitCursor = true;
+            this.dateTimePickerNMdob.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.dateTimePickerNMdob.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.dateTimePickerNMdob.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerNMdob.Location = new System.Drawing.Point(206, 391);
+            this.dateTimePickerNMdob.Name = "dateTimePickerNMdob";
+            this.dateTimePickerNMdob.Size = new System.Drawing.Size(100, 22);
+            this.dateTimePickerNMdob.TabIndex = 21;
             // 
-            // dateTimePicker2
+            // dateTimePickerNMjoin
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(576, 243);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker2.TabIndex = 22;
-            this.dateTimePicker2.UseWaitCursor = true;
+            this.dateTimePickerNMjoin.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.dateTimePickerNMjoin.CalendarTrailingForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.dateTimePickerNMjoin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerNMjoin.Location = new System.Drawing.Point(576, 243);
+            this.dateTimePickerNMjoin.Name = "dateTimePickerNMjoin";
+            this.dateTimePickerNMjoin.Size = new System.Drawing.Size(100, 22);
+            this.dateTimePickerNMjoin.TabIndex = 22;
             // 
-            // button1
+            // btnNMsave
             // 
-            this.button1.Location = new System.Drawing.Point(274, 566);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.UseWaitCursor = true;
+            this.btnNMsave.AutoSize = true;
+            this.btnNMsave.BackColor = System.Drawing.Color.Transparent;
+            this.btnNMsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNMsave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnNMsave.Image = ((System.Drawing.Image)(resources.GetObject("btnNMsave.Image")));
+            this.btnNMsave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNMsave.Location = new System.Drawing.Point(254, 566);
+            this.btnNMsave.Name = "btnNMsave";
+            this.btnNMsave.Size = new System.Drawing.Size(108, 35);
+            this.btnNMsave.TabIndex = 23;
+            this.btnNMsave.Text = "Save";
+            this.btnNMsave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNMsave.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnNMRest
             // 
-            this.button2.Location = new System.Drawing.Point(432, 566);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 24;
-            this.button2.Text = "Reset";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.UseWaitCursor = true;
+            this.btnNMRest.AutoSize = true;
+            this.btnNMRest.BackColor = System.Drawing.Color.Transparent;
+            this.btnNMRest.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNMRest.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnNMRest.Image = ((System.Drawing.Image)(resources.GetObject("btnNMRest.Image")));
+            this.btnNMRest.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNMRest.Location = new System.Drawing.Point(412, 566);
+            this.btnNMRest.Name = "btnNMRest";
+            this.btnNMRest.Size = new System.Drawing.Size(108, 35);
+            this.btnNMRest.TabIndex = 24;
+            this.btnNMRest.Text = "Reset";
+            this.btnNMRest.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNMRest.UseVisualStyleBackColor = false;
             // 
-            // comboBox1
+            // comboBoxNMmem
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(431, 513);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 25;
-            this.comboBox1.UseWaitCursor = true;
+            this.comboBoxNMmem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.comboBoxNMmem.FormattingEnabled = true;
+            this.comboBoxNMmem.Items.AddRange(new object[] {
+            "1 Month",
+            "2 Months",
+            "3 Months",
+            "6 Months",
+            "1 Year"});
+            this.comboBoxNMmem.Location = new System.Drawing.Point(446, 513);
+            this.comboBoxNMmem.Name = "comboBoxNMmem";
+            this.comboBoxNMmem.Size = new System.Drawing.Size(121, 24);
+            this.comboBoxNMmem.TabIndex = 25;
             // 
-            // comboBox2
+            // comboBoxNMgym
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(576, 316);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
-            this.comboBox2.TabIndex = 26;
-            this.comboBox2.UseWaitCursor = true;
+            this.comboBoxNMgym.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.comboBoxNMgym.FormattingEnabled = true;
+            this.comboBoxNMgym.Items.AddRange(new object[] {
+            "5.00 A.M - 6.00 A.M",
+            "6.00 A.M - 7.00 A.M",
+            "7.00 A.M - 8.00 A.M",
+            "8.00 A.M -9.00 A.M",
+            "4.00 P.M - 5.00 P.M",
+            "5.00 P.M - 6.00 P.M",
+            "6.00 P.M - 7.00 A.M",
+            "7.00 P.M - 8.00 P.M",
+            "8.00 P.M - 9.00 P.M",
+            ""});
+            this.comboBoxNMgym.Location = new System.Drawing.Point(576, 316);
+            this.comboBoxNMgym.Name = "comboBoxNMgym";
+            this.comboBoxNMgym.Size = new System.Drawing.Size(141, 24);
+            this.comboBoxNMgym.TabIndex = 26;
             // 
             // label11
             // 
@@ -325,23 +368,21 @@
             this.label11.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.label11.Location = new System.Drawing.Point(288, 90);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(200, 36);
+            this.label11.Size = new System.Drawing.Size(230, 36);
             this.label11.TabIndex = 27;
-            this.label11.Text = "New Member";
+            this.label11.Text = "Crunch Fitness";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label11.UseWaitCursor = true;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(363, 33);
+            this.pictureBox1.Location = new System.Drawing.Point(352, 33);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(67, 54);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.UseWaitCursor = true;
             // 
             // New_Member
             // 
@@ -350,22 +391,22 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(804, 633);
+            this.ClientSize = new System.Drawing.Size(845, 656);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.comboBoxNMgym);
+            this.Controls.Add(this.comboBoxNMmem);
+            this.Controls.Add(this.btnNMRest);
+            this.Controls.Add(this.btnNMsave);
+            this.Controls.Add(this.dateTimePickerNMjoin);
+            this.Controls.Add(this.dateTimePickerNMdob);
+            this.Controls.Add(this.radioButtonNMfemale);
+            this.Controls.Add(this.radioButtonNMmale);
+            this.Controls.Add(this.textBoxNMadd);
+            this.Controls.Add(this.textBoxNMemail);
+            this.Controls.Add(this.textBoxNMphone);
+            this.Controls.Add(this.textBoxNMLname);
+            this.Controls.Add(this.textBox1NMname);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -376,12 +417,14 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.ForeColor = System.Drawing.Color.Black;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "New_Member";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "New_Member";
             this.TransparencyKey = System.Drawing.Color.Black;
-            this.UseWaitCursor = true;
             this.Load += new System.EventHandler(this.New_Member_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -391,19 +434,19 @@
 
         #endregion
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox textBox1NMname;
+        private System.Windows.Forms.TextBox textBoxNMLname;
+        private System.Windows.Forms.TextBox textBoxNMphone;
+        private System.Windows.Forms.TextBox textBoxNMemail;
+        private System.Windows.Forms.TextBox textBoxNMadd;
+        private System.Windows.Forms.RadioButton radioButtonNMmale;
+        private System.Windows.Forms.RadioButton radioButtonNMfemale;
+        private System.Windows.Forms.DateTimePicker dateTimePickerNMdob;
+        private System.Windows.Forms.DateTimePicker dateTimePickerNMjoin;
+        private System.Windows.Forms.Button btnNMsave;
+        private System.Windows.Forms.Button btnNMRest;
+        private System.Windows.Forms.ComboBox comboBoxNMmem;
+        private System.Windows.Forms.ComboBox comboBoxNMgym;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

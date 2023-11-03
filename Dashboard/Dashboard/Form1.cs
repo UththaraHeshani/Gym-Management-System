@@ -37,7 +37,8 @@ namespace Dashboard
         
         private void deleteMemberToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Delete_Member Dm=new Delete_Member();
+            Dm.Show();
         }
 
         private void newMemberToolStripMenuItem_Click(object sender, EventArgs e)
@@ -45,6 +46,59 @@ namespace Dashboard
             New_Member nm = new New_Member();
             nm.Show();
 
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            /*menuStrip1.AutoSize = false;
+            menuStrip1.Size = new Size(1100, 50);*/
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void newStafeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            New_staff ns = new New_staff();
+            ns.Show();
+        }
+
+        private void equToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            New_Equipment ne= new New_Equipment();
+            ne. Show();
+        }
+
+        private void searchMemberToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Search search = new Search();
+            search.Show();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("This will close Your application.Confirm?", "Close", MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                MessageBox.Show("Welcome Back", "Welcome",MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Log OUT !! Confirm?", "LOG OUT", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            {
+                this.Close();
+                Login lg=new Login();
+                lg.Show();
+            }
+            
 
         }
     }

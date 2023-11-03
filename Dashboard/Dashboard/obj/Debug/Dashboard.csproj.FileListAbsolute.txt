@@ -10,3 +10,8 @@ C:\Users\Uththara Heshani\OneDrive\Desktop\Github\Gym-Management-System\Dashboar
 C:\Users\Uththara Heshani\OneDrive\Desktop\Github\Gym-Management-System\Dashboard\Dashboard\obj\Debug\Dashboard.exe
 C:\Users\Uththara Heshani\OneDrive\Desktop\Github\Gym-Management-System\Dashboard\Dashboard\obj\Debug\Dashboard.pdb
 C:\Users\Uththara Heshani\OneDrive\Desktop\Github\Gym-Management-System\Dashboard\Dashboard\obj\Debug\Dashboard.New_Member.resources
+C:\Users\Uththara Heshani\OneDrive\Desktop\Github\Gym-Management-System\Dashboard\Dashboard\obj\Debug\Dashboard.New_staff.resources
+C:\Users\Uththara Heshani\OneDrive\Desktop\Github\Gym-Management-System\Dashboard\Dashboard\obj\Debug\Dashboard.New_Equipment.resources
+C:\Users\Uththara Heshani\OneDrive\Desktop\Github\Gym-Management-System\Dashboard\Dashboard\obj\Debug\Dashboard.Search.resources
+C:\Users\Uththara Heshani\OneDrive\Desktop\Github\Gym-Management-System\Dashboard\Dashboard\obj\Debug\Dashboard.Delete_Member.resources
+C:\Users\Uththara Heshani\OneDrive\Desktop\Github\Gym-Management-System\Dashboard\Dashboard\obj\Debug\Dashboard.Login.resources
