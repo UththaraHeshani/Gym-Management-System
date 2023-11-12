@@ -53,6 +53,7 @@
             this.btnDMsearch.Text = "Delete";
             this.btnDMsearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDMsearch.UseVisualStyleBackColor = false;
+            this.btnDMsearch.Click += new System.EventHandler(this.btnDMsearch_Click);
             // 
             // textBoxDMDelete
             // 
@@ -83,7 +84,7 @@
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label11.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.label11.Location = new System.Drawing.Point(264, 97);
+            this.label11.Location = new System.Drawing.Point(275, 97);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(230, 36);
             this.label11.TabIndex = 39;
@@ -94,7 +95,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(337, 25);
+            this.pictureBox1.Location = new System.Drawing.Point(347, 25);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(92, 68);
@@ -105,7 +106,7 @@
             // dataGridViewDM
             // 
             this.dataGridViewDM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDM.Location = new System.Drawing.Point(12, 318);
+            this.dataGridViewDM.Location = new System.Drawing.Point(28, 321);
             this.dataGridViewDM.Name = "dataGridViewDM";
             this.dataGridViewDM.RowHeadersWidth = 51;
             this.dataGridViewDM.RowTemplate.Height = 24;
@@ -130,6 +131,7 @@
             this.Name = "Delete_Member";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Delete_Member";
+            this.Load += new System.EventHandler(this.Delete_Member_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDM)).EndInit();
             this.ResumeLayout(false);

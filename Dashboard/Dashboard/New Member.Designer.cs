@@ -307,6 +307,7 @@
             this.btnNMsave.Text = "Save";
             this.btnNMsave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNMsave.UseVisualStyleBackColor = false;
+            this.btnNMsave.Click += new System.EventHandler(this.btnNMsave_Click);
             // 
             // btnNMRest
             // 
@@ -323,6 +324,7 @@
             this.btnNMRest.Text = "Reset";
             this.btnNMRest.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNMRest.UseVisualStyleBackColor = false;
+            this.btnNMRest.Click += new System.EventHandler(this.btnNMRest_Click);
             // 
             // comboBoxNMmem
             // 

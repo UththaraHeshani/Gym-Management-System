@@ -52,7 +52,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(379, 24);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(92, 68);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -152,7 +152,7 @@
             // textBoxEname
             // 
             this.textBoxEname.Location = new System.Drawing.Point(354, 185);
-            this.textBoxEname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxEname.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEname.Name = "textBoxEname";
             this.textBoxEname.Size = new System.Drawing.Size(136, 27);
             this.textBoxEname.TabIndex = 38;
@@ -160,7 +160,7 @@
             // textBoxEdes
             // 
             this.textBoxEdes.Location = new System.Drawing.Point(354, 232);
-            this.textBoxEdes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxEdes.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEdes.Multiline = true;
             this.textBoxEdes.Name = "textBoxEdes";
             this.textBoxEdes.Size = new System.Drawing.Size(272, 80);
@@ -169,7 +169,7 @@
             // textBoxEmus
             // 
             this.textBoxEmus.Location = new System.Drawing.Point(354, 341);
-            this.textBoxEmus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxEmus.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEmus.Name = "textBoxEmus";
             this.textBoxEmus.Size = new System.Drawing.Size(136, 27);
             this.textBoxEmus.TabIndex = 40;
@@ -177,7 +177,7 @@
             // textBoxEqcost
             // 
             this.textBoxEqcost.Location = new System.Drawing.Point(354, 472);
-            this.textBoxEqcost.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxEqcost.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEqcost.Name = "textBoxEqcost";
             this.textBoxEqcost.Size = new System.Drawing.Size(136, 27);
             this.textBoxEqcost.TabIndex = 41;
@@ -187,7 +187,7 @@
             this.dateTimePickerEq.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePickerEq.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerEq.Location = new System.Drawing.Point(354, 407);
-            this.dateTimePickerEq.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePickerEq.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePickerEq.Name = "dateTimePickerEq";
             this.dateTimePickerEq.Size = new System.Drawing.Size(136, 27);
             this.dateTimePickerEq.TabIndex = 42;
@@ -199,12 +199,13 @@
             this.btnEqsave.Image = ((System.Drawing.Image)(resources.GetObject("btnEqsave.Image")));
             this.btnEqsave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEqsave.Location = new System.Drawing.Point(155, 541);
-            this.btnEqsave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEqsave.Margin = new System.Windows.Forms.Padding(4);
             this.btnEqsave.Name = "btnEqsave";
             this.btnEqsave.Size = new System.Drawing.Size(118, 29);
             this.btnEqsave.TabIndex = 43;
             this.btnEqsave.Text = "Save";
             this.btnEqsave.UseVisualStyleBackColor = true;
+            this.btnEqsave.Click += new System.EventHandler(this.btnEqsave_Click);
             // 
             // btnEqRest
             // 
@@ -213,13 +214,14 @@
             this.btnEqRest.Image = ((System.Drawing.Image)(resources.GetObject("btnEqRest.Image")));
             this.btnEqRest.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEqRest.Location = new System.Drawing.Point(344, 541);
-            this.btnEqRest.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEqRest.Margin = new System.Windows.Forms.Padding(4);
             this.btnEqRest.Name = "btnEqRest";
             this.btnEqRest.Size = new System.Drawing.Size(102, 29);
             this.btnEqRest.TabIndex = 44;
             this.btnEqRest.Text = "Reset";
             this.btnEqRest.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEqRest.UseVisualStyleBackColor = true;
+            this.btnEqRest.Click += new System.EventHandler(this.btnEqRest_Click);
             // 
             // btnEqView
             // 
@@ -229,13 +231,14 @@
             this.btnEqView.Image = ((System.Drawing.Image)(resources.GetObject("btnEqView.Image")));
             this.btnEqView.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEqView.Location = new System.Drawing.Point(507, 541);
-            this.btnEqView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEqView.Margin = new System.Windows.Forms.Padding(4);
             this.btnEqView.Name = "btnEqView";
             this.btnEqView.Size = new System.Drawing.Size(182, 31);
             this.btnEqView.TabIndex = 45;
             this.btnEqView.Text = "View  Equipment";
             this.btnEqView.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEqView.UseVisualStyleBackColor = true;
+            this.btnEqView.Click += new System.EventHandler(this.btnEqView_Click);
             // 
             // New_Equipment
             // 
@@ -262,7 +265,7 @@
             this.Controls.Add(this.label11);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Navy;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "New_Equipment";

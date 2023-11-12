@@ -15,3 +15,4 @@ C:\Users\Uththara Heshani\OneDrive\Desktop\Github\Gym-Management-System\Dashboar
 C:\Users\Uththara Heshani\OneDrive\Desktop\Github\Gym-Management-System\Dashboard\Dashboard\obj\Debug\Dashboard.Search.resources
 C:\Users\Uththara Heshani\OneDrive\Desktop\Github\Gym-Management-System\Dashboard\Dashboard\obj\Debug\Dashboard.Delete_Member.resources
 C:\Users\Uththara Heshani\OneDrive\Desktop\Github\Gym-Management-System\Dashboard\Dashboard\obj\Debug\Dashboard.Login.resources
+C:\Users\Uththara Heshani\OneDrive\Desktop\Github\Gym-Management-System\Dashboard\Dashboard\obj\Debug\Dashboard.View_Equipment.resources

@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(New_staff));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox = new System.Windows.Forms.TextBox();
+            this.textBoxNSfname = new System.Windows.Forms.TextBox();
             this.textBoxNSLname = new System.Windows.Forms.TextBox();
             this.textBoxNSphone = new System.Windows.Forms.TextBox();
             this.textBoxNSemail = new System.Windows.Forms.TextBox();
@@ -78,13 +78,13 @@
             this.label11.Text = "Crunch Fitness";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox
+            // textBoxNSfname
             // 
-            this.textBox.ForeColor = System.Drawing.Color.Navy;
-            this.textBox.Location = new System.Drawing.Point(213, 178);
-            this.textBox.Name = "textBox";
-            this.textBox.Size = new System.Drawing.Size(100, 22);
-            this.textBox.TabIndex = 31;
+            this.textBoxNSfname.ForeColor = System.Drawing.Color.Navy;
+            this.textBoxNSfname.Location = new System.Drawing.Point(213, 178);
+            this.textBoxNSfname.Name = "textBoxNSfname";
+            this.textBoxNSfname.Size = new System.Drawing.Size(100, 22);
+            this.textBoxNSfname.TabIndex = 31;
             // 
             // textBoxNSLname
             // 
@@ -295,6 +295,7 @@
             this.btnNSsave.Text = "Save";
             this.btnNSsave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNSsave.UseVisualStyleBackColor = true;
+            this.btnNSsave.Click += new System.EventHandler(this.btnNSsave_Click);
             // 
             // btnNSreset
             // 
@@ -310,6 +311,7 @@
             this.btnNSreset.Text = "Reset";
             this.btnNSreset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNSreset.UseVisualStyleBackColor = true;
+            this.btnNSreset.Click += new System.EventHandler(this.btnNSreset_Click);
             // 
             // New_staff
             // 
@@ -336,7 +338,7 @@
             this.Controls.Add(this.textBoxNSemail);
             this.Controls.Add(this.textBoxNSphone);
             this.Controls.Add(this.textBoxNSLname);
-            this.Controls.Add(this.textBox);
+            this.Controls.Add(this.textBoxNSfname);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label11);
             this.MaximizeBox = false;
@@ -355,7 +357,7 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox;
+        private System.Windows.Forms.TextBox textBoxNSfname;
         private System.Windows.Forms.TextBox textBoxNSLname;
         private System.Windows.Forms.TextBox textBoxNSphone;
         private System.Windows.Forms.TextBox textBoxNSemail;

@@ -30,15 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnlogin = new System.Windows.Forms.Button();
             this.textBoxpassword = new System.Windows.Forms.TextBox();
             this.textBoxusername = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBoxconfirmpw = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btnlogin = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -46,8 +44,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightCoral;
-            this.panel1.Controls.Add(this.textBoxconfirmpw);
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.textBoxpassword);
             this.panel1.Controls.Add(this.textBoxusername);
             this.panel1.Controls.Add(this.label2);
@@ -55,48 +51,10 @@
             this.panel1.Controls.Add(this.btnlogin);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(850, 250);
+            this.panel1.Location = new System.Drawing.Point(854, 250);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(429, 498);
+            this.panel1.Size = new System.Drawing.Size(420, 427);
             this.panel1.TabIndex = 0;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label11.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.label11.Location = new System.Drawing.Point(103, 76);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(230, 36);
-            this.label11.TabIndex = 41;
-            this.label11.Text = "Crunch Fitness";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(171, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(92, 68);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 40;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnlogin
-            // 
-            this.btnlogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnlogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnlogin.Location = new System.Drawing.Point(171, 421);
-            this.btnlogin.Name = "btnlogin";
-            this.btnlogin.Size = new System.Drawing.Size(114, 36);
-            this.btnlogin.TabIndex = 46;
-            this.btnlogin.Text = "Login";
-            this.btnlogin.UseVisualStyleBackColor = false;
-            this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
             // 
             // textBoxpassword
             // 
@@ -105,9 +63,11 @@
             this.textBoxpassword.Location = new System.Drawing.Point(98, 268);
             this.textBoxpassword.Multiline = true;
             this.textBoxpassword.Name = "textBoxpassword";
+            this.textBoxpassword.PasswordChar = '*';
             this.textBoxpassword.Size = new System.Drawing.Size(235, 37);
             this.textBoxpassword.TabIndex = 50;
             this.textBoxpassword.UseSystemPasswordChar = true;
+            this.textBoxpassword.TextChanged += new System.EventHandler(this.textBoxpassword_TextChanged);
             // 
             // textBoxusername
             // 
@@ -139,25 +99,43 @@
             this.label1.TabIndex = 47;
             this.label1.Text = "User Name";
             // 
-            // textBoxconfirmpw
+            // btnlogin
             // 
-            this.textBoxconfirmpw.BackColor = System.Drawing.Color.DarkGray;
-            this.textBoxconfirmpw.Location = new System.Drawing.Point(98, 357);
-            this.textBoxconfirmpw.Multiline = true;
-            this.textBoxconfirmpw.Name = "textBoxconfirmpw";
-            this.textBoxconfirmpw.Size = new System.Drawing.Size(235, 37);
-            this.textBoxconfirmpw.TabIndex = 52;
-            this.textBoxconfirmpw.UseSystemPasswordChar = true;
+            this.btnlogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnlogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlogin.Location = new System.Drawing.Point(161, 345);
+            this.btnlogin.Name = "btnlogin";
+            this.btnlogin.Size = new System.Drawing.Size(114, 36);
+            this.btnlogin.TabIndex = 46;
+            this.btnlogin.Text = "Login";
+            this.btnlogin.UseVisualStyleBackColor = false;
+            this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
             // 
-            // label3
+            // label11
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(94, 321);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(163, 20);
-            this.label3.TabIndex = 51;
-            this.label3.Text = "Confirm Password";
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label11.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.label11.Location = new System.Drawing.Point(103, 76);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(230, 36);
+            this.label11.TabIndex = 41;
+            this.label11.Text = "Crunch Fitness";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(161, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(92, 68);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 40;
+            this.pictureBox1.TabStop = false;
             // 
             // Login
             // 
@@ -165,7 +143,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(981, 616);
+            this.ClientSize = new System.Drawing.Size(1327, 727);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -190,7 +168,5 @@
         private System.Windows.Forms.TextBox textBoxusername;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxconfirmpw;
-        private System.Windows.Forms.Label label3;
     }
 }

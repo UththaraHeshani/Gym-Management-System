@@ -62,7 +62,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(9, 9);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.menuStrip1.Size = new System.Drawing.Size(1121, 72);
+            this.menuStrip1.Size = new System.Drawing.Size(1121, 48);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -118,7 +118,7 @@
             // 
             // deleteMemberToolStripMenuItem
             // 
-            this.deleteMemberToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
+            this.deleteMemberToolStripMenuItem.BackColor = System.Drawing.Color.Black;
             this.deleteMemberToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteMemberToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deleteMemberToolStripMenuItem.Image")));
             this.deleteMemberToolStripMenuItem.Name = "deleteMemberToolStripMenuItem";

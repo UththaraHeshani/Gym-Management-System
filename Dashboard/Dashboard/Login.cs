@@ -19,7 +19,7 @@ namespace Dashboard
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
-            if(textBoxusername.Text=="admin" && textBoxpassword.Text == textBoxconfirmpw.Text)
+            if(textBoxusername.Text=="admin" && textBoxpassword.Text == "admin")
             {
                 Form1 fm=new Form1();
                 fm.Show();
@@ -29,6 +29,11 @@ namespace Dashboard
             {
                 MessageBox.Show("Incorrect user Name or Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void textBoxpassword_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
