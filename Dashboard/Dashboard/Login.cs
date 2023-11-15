@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Dashboard
 {
@@ -19,21 +20,27 @@ namespace Dashboard
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
-            if(textBoxusername.Text=="admin" && textBoxpassword.Text == "admin")
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = "data source= COLPNLSL309; database=gym; integrated security=true ";
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+
+
+            cmd.CommandText = "select*from UserLogin where Uname='" + textBoxusername.Text + "'and Upassword='" + textBoxpassword.Text+ "'";
+            SqlDataAdapter DA = new SqlDataAdapter(cmd);
+            DataSet DS = new DataSet();
+            DA.Fill(DS);
+            if (DS.Tables[0].Rows.Count != 0)
             {
-                Form1 fm=new Form1();
-                fm.Show();
                 this.Hide();
+                Form1 das = new Form1();
+                das.Show();
             }
             else
             {
-                MessageBox.Show("Incorrect user Name or Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Wrong Username or Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void textBoxpassword_TextChanged(object sender, EventArgs e)
-        {
 
         }
     }
-}
+    }

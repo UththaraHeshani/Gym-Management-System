@@ -66,8 +66,6 @@
             this.textBoxpassword.PasswordChar = '*';
             this.textBoxpassword.Size = new System.Drawing.Size(235, 37);
             this.textBoxpassword.TabIndex = 50;
-            this.textBoxpassword.UseSystemPasswordChar = true;
-            this.textBoxpassword.TextChanged += new System.EventHandler(this.textBoxpassword_TextChanged);
             // 
             // textBoxusername
             // 
