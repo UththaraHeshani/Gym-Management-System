@@ -1,0 +1,51 @@
+//SQL QUERY FOR DATABASE CREATION
+create database gym;
+
+//SQL CREATION FOR TABLE NewMember
+create table NewMember
+(
+MID int NOT NULL IDENTITY(1,1) primary key,
+Fname varchar(150) Not null,
+Lname varchar(150) Not null,
+Gender varchar(20) Not null,
+Dob varchar(100) Not null,
+Mobile bigint not null,
+Email varchar(150),
+JoinDate varchar(50) Not null,
+Gymtime varchar(120) Not null,
+Maddress varchar(250) Not null,
+Membershiptime varchar(120) Not null
+);
+
+//SQL CREATION FOR TABLE NewStaff
+SID int NOT NULL IDENTITY(1,1) primary key,
+Fname varchar(150) Not null,
+Lname varchar(150) Not null,
+Gender varchar(20) Not null,
+Dob varchar(100) Not null,
+Mobile bigint not null,
+Email varchar(150),
+JoinDate varchar(100) Not null,
+SAddress varchar(100) Not null,
+);
+
+//SQL CREATION FOR TABLE Equipment
+EID int NOT NULL IDENTITY(1,1) primary key,
+EquipName varchar(250) Not null,
+EDescription varchar(450) Not null,
+MUsed varchar(250) Not null,
+DDate varchar(150) Not null,
+Cost bigint not null,
+);
+
+//SQL CREATION FOR TABLE UserLogin
+UID int NOT NULL IDENTITY(1,1) primary key,
+Uname varchar(150) Not null,
+UPassword varchar(150) Not null,
+);
+
+User Name-admin
+Password- 1234
+
+
+
